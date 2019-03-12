@@ -39,7 +39,7 @@
     <script>
       var w = window.innerWidth;
       var h = window.innerHeight;
-      let img;
+      //let img;
       let striker;
       let reaper;
       var ball = new ball(); //create global object
@@ -48,7 +48,7 @@
       
       
       function preload() {
-        img = loadImage('http://vignette1.wikia.nocookie.net/battlefield/images/2/2a/Battlefield_4_Siege_of_Shanghai_Overview.jpg');
+        //img = loadImage('http://vignette1.wikia.nocookie.net/battlefield/images/2/2a/Battlefield_4_Siege_of_Shanghai_Overview.jpg');
         striker = loadImage('https://requestreduce.org/images/f-18-clipart-21.jpg');
         reaper = loadImage('https://images.onlinelabels.com/images/clip-art/GDJ/F22%20Jet-258913.png');
       }
@@ -57,7 +57,7 @@
       }
       
       function draw() {
-        background(img, 0);
+        background(250);
         image(striker,ball.x,ball.y);
         striker.resize(50,75);
         image(reaper,wingman.x,wingman.y);
