@@ -35,10 +35,7 @@
   </head>
   
   <body>
-    <div id="location">
-      <p id="longitude"></p>
-      <p id="lattitude"></p>
-    </div>
+    
     <div id="eagle">
       <img src="https://vignette.wikia.nocookie.net/aircraft/images/d/db/Clip-art-military-f-15-jet-top.gif/revision/latest?cb=20120601201429">
     </div>
@@ -107,10 +104,6 @@
           }
           if (keyIsDown(83) && (this.y < h)) {
             this.y += 10;
-          }
-          this.position = function() {
-            document.getElementById('longitude').innerHTML = this.x;
-            document.getElementById('lattitude').innerHTML = this.y;
           }
         }
       }
